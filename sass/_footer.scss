@@ -1,0 +1,12 @@
+.footer {
+  padding: 5rem 5rem;
+  text-align: center;
+  background-color: $color-secondary-dark;
+  font-size: 2rem;
+  font-family: $default-font;
+  color: $color-secondary-text;
+
+  &__icon {
+    color: $color-secondary-text;
+  }
+}

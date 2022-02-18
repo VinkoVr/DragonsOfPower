@@ -1,0 +1,49 @@
+$default-font: "Hind", sans-serif;
+$header-font: "Expletus Sans", cursive;
+$font-writing: "Merienda", cursive;
+
+$color-primary: #74959a;
+$color-primary-dark: #98b4aa;
+
+$color-secondary: #495371;
+$color-secondary-dark: #414b66;
+
+$color-primary-text: #202b2d;
+$color-primary-dark-text: #424242;
+
+$color-secondary-text: #bacacd;
+$color-secondary-dark-text: #8e9da0;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $default-font;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-primary;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh 60vh minmax(50vh, max-content) min-content;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.remove {
+  display: none;
+}

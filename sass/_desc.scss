@@ -1,0 +1,32 @@
+.desc {
+  background-color: $color-primary-dark;
+  background-image: linear-gradient(rgba(grey, 0.85), rgba(grey, 0.65)),
+    url(../img/old-paper.jpg);
+  background-size: cover;
+  padding: 5rem;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  &__list {
+    list-style-type: none;
+  }
+  &__text {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    line-height: 2;
+    font-family: $font-writing;
+    color: $color-primary-dark-text;
+  }
+
+  &__header {
+    font-family: $font-writing;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.races-desc {
+  background-color: $color-primary;
+}

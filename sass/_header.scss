@@ -1,0 +1,108 @@
+.hero {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-rows: min-content auto min-content;
+  background-color: $color-primary;
+  padding: 8rem;
+  padding-top: 4rem;
+  background-image: linear-gradient(
+      rgba($color-primary, 0.95),
+      rgba($color-primary, 0.95)
+    ),
+    url(../img/dragon.jpg);
+  background-size: cover;
+  &__header {
+    @keyframes moveHeader {
+      0% {
+        transform: translateX(-20rem);
+      }
+
+      50% {
+        transform: translateX(20rem);
+      }
+
+      100% {
+      }
+    }
+
+    animation: moveHeader 2s 1s;
+
+    transition: all 0.5s;
+  }
+
+  &__arrow-down {
+    width: 5rem;
+    height: 5rem;
+
+    animation: pulsate 1.5s 5s;
+
+    &:active {
+      transition: all 0.5s;
+    }
+
+    @keyframes pulsate {
+      0% {
+        transform: scale(1);
+        box-shadow: none;
+      }
+
+      50% {
+        transform: scale(1.55);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  font-family: $default-font;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+  &--light {
+    background-color: $color-secondary-text;
+    color: $color-primary-text;
+  }
+
+  &--secondary {
+    background-color: $color-secondary-text;
+  }
+
+  &:hover {
+    color: $color-secondary-dark-text;
+  }
+
+  &:active {
+    transform: translateY(3px);
+    transition: transform 0.2s;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 0; // overflow: hidden;
+  align-items: center;
+  &__logo {
+    height: 7rem;
+    padding: 1rem 4rem;
+    display: inline-block;
+  }
+
+  &__btn {
+    margin: auto 5rem;
+    min-width: 16.5rem;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,49 @@
+%heading {
+  font-family: $header-font;
+  font-weight: 500;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 5.5rem;
+  color: $color-primary-text;
+  line-height: 1;
+  &--dark {
+    color: $color-primary-text;
+  }
+}
+.heading-2 {
+  @extend %heading;
+  font-size: 3.5rem;
+  line-height: 1;
+  &--dark {
+    color: $color-primary-text;
+  }
+  &--light {
+    color: $color-secondary-text;
+  }
+}
+
+.heading2--light {
+  color: $color-secondary-text;
+  &:hover {
+    color: $color-secondary-dark-text;
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 2.5rem;
+  color: $color-primary-text;
+  line-height: 1;
+}
+.heading-4 {
+  @extend %heading;
+  font-size: 2rem;
+  color: $color-primary-text;
+  line-height: 1;
+
+  &--light {
+    color: $color-secondary-text;
+  }
+}
