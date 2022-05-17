@@ -121,7 +121,14 @@ function observing() {
                 .querySelector(".raceName")
                 .classList.remove("woopsy");
               let toJson = await data.json();
-
+              document.querySelector(".raceName__label").textContent =
+                "Success";
+              setTimeout(() => {
+                document.querySelector(".raceName__label").textContent =
+                  "Search for specific Race";
+                document.querySelector(".raceName").classList.toggle("woopsy2");
+              }, 1000);
+              document.querySelector(".raceName").classList.toggle("woopsy2");
               let oops2 = document
                 .querySelector(".desc__list")
                 .classList.remove("hide");

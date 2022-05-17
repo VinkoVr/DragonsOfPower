@@ -101,3 +101,10 @@
     }
   }
 }
+.woopsy2 {
+  outline-color: green;
+  outline-width: 4px;
+  outline-style: solid;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}

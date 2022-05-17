@@ -365,6 +365,16 @@ body {
   }
 }
 
+.woopsy2 {
+  outline-color: green;
+  outline-width: 4px;
+  outline-style: solid;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Expletus Sans", cursive;
   font-weight: 500;
